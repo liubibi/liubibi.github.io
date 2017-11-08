@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Java 技术 下载 微服务"><title> | 秋风瑟瑟，唯尔独暖</title><link rel="stylesheet" type="text/css" href="//fonts.css.network/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">秋风瑟瑟，唯尔独暖</h1><a id="logo" href="/.">秋风瑟瑟，唯尔独暖</a><p class="description">哈哈哈，成功了。</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="Arama"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title"></h1><div class="post-meta"><a href="/2017/11/08/有趣的一个小游戏/#comments" class="comment-count"></a><p><span class="date">Nov 08, 2017</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>点击</i></i></span></p></div><div class="post-content"><h1 id="The-Fuck"><a href="#The-Fuck" class="headerlink" title="The Fuck     "></a>The Fuck <a href="https://pypi.python.org/pypi/thefuck/" target="_blank" rel="external"><img src="https://img.shields.io/pypi/v/thefuck.svg?label=version" alt="Version"></a> <a href="https://travis-ci.org/nvbn/thefuck" target="_blank" rel="external"><img src="https://travis-ci.org/nvbn/thefuck.svg?branch=master" alt="Build Status"></a> <a href="https://ci.appveyor.com/project/nvbn/thefuck" target="_blank" rel="external"><img src="https://ci.appveyor.com/api/projects/status/1sskj4imj02um0gu/branch/master?svg=true" alt="Windows Build Status"></a> <a href="https://coveralls.io/github/nvbn/thefuck" target="_blank" rel="external"><img src="https://img.shields.io/coveralls/nvbn/thefuck.svg" alt="Coverage"></a> <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-007EC7.svg" alt="MIT License"></a></h1><p>Magnificent app which corrects your previous console command,<br>inspired by a <a href="https://twitter.com/liamosaur/" target="_blank" rel="external">@liamosaur</a><br><a href="https://twitter.com/liamosaur/status/506975850596536320" target="_blank" rel="external">tweet</a>.</p>
+<p>The Fuck is too slow? <a href="#experimental-instant-mode">Try experimental instant mode!</a> </p>
+<p><a href="https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif" target="_blank" rel="external"><img src="https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif" alt="gif with examples"></a></p>
+<p>Few more examples:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">➜ apt-get install vim</div><div class="line">E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)</div><div class="line">E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?</div><div class="line"></div><div class="line">➜ fuck</div><div class="line">sudo apt-get install vim [enter/↑/↓/ctrl+c]</div><div class="line">[sudo] password <span class="keyword">for</span> nvbn:</div><div class="line">Reading package lists... Done</div><div class="line">...</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">➜ git push</div><div class="line">fatal: The current branch master has no upstream branch.</div><div class="line">To push the current branch and <span class="built_in">set</span> the remote as upstream, use</div><div class="line"></div><div class="line">    git push --<span class="built_in">set</span>-upstream origin master</div><div class="line"></div><div class="line"></div><div class="line">➜ fuck</div><div class="line">git push --<span class="built_in">set</span>-upstream origin master [enter/↑/↓/ctrl+c]</div><div class="line">Counting objects: 9, <span class="keyword">done</span>.</div><div class="line">...</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">➜ puthon</div><div class="line">No <span class="built_in">command</span> <span class="string">'puthon'</span> found, did you mean:</div><div class="line"> Command <span class="string">'python'</span> from package <span class="string">'python-minimal'</span> (main)</div><div class="line"> Command <span class="string">'python'</span> from package <span class="string">'python3'</span> (main)</div><div class="line">zsh: <span class="built_in">command</span> not found: puthon</div><div class="line"></div><div class="line">➜ fuck</div><div class="line">python [enter/↑/↓/ctrl+c]</div><div class="line">Python 3.4.2 (default, Oct  8 2014, 13:08:17)</div><div class="line">...</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">➜ git brnch</div><div class="line">git: <span class="string">'brnch'</span> is not a git <span class="built_in">command</span>. See <span class="string">'git --help'</span>.</div><div class="line"></div><div class="line">Did you mean this?</div><div class="line">    branch</div><div class="line"></div><div class="line">➜ fuck</div><div class="line">git branch [enter/↑/↓/ctrl+c]</div><div class="line">* master</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">➜ lein rpl</div><div class="line"><span class="string">'rpl'</span> is not a task. See <span class="string">'lein help'</span>.</div><div class="line"></div><div class="line">Did you mean this?</div><div class="line">         repl</div><div class="line"></div><div class="line">➜ fuck</div><div class="line">lein repl [enter/↑/↓/ctrl+c]</div><div class="line">nREPL server started on port 54848 on host 127.0.0.1 - nrepl://127.0.0.1:54848</div><div class="line">REPL-y 0.3.1</div><div class="line">...</div></pre></td></tr></table></figure>
+<p>If you are not scared to blindly run the changed command, there is a <code>require_confirmation</code><br><a href="#settings">settings</a> option:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">➜ apt-get install vim</div><div class="line">E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)</div><div class="line">E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?</div><div class="line"></div><div class="line">➜ fuck</div><div class="line">sudo apt-get install vim</div><div class="line">[sudo] password <span class="keyword">for</span> nvbn:</div><div class="line">Reading package lists... Done</div><div class="line">...</div></pre></td></tr></table></figure>
+<h2 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><ul>
+<li>python (3.3+)</li>
+<li>pip</li>
+<li>python-dev</li>
+</ul>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>On OS X you can install <code>The Fuck</code> with <a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install thefuck</div></pre></td></tr></table></figure>
+<p>On Ubuntu you can install <code>The Fuck</code> with:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt update</div><div class="line">sudo apt install python3-dev python3-pip</div><div class="line">sudo pip3 install thefuck</div></pre></td></tr></table></figure></p>
+<p>On other systems you can install <code>The Fuck</code> with <code>pip</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install thefuck</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/nvbn/thefuck/wiki/Installation" target="_blank" rel="external">Or using an OS package manager (OS X, Ubuntu, Arch).</a></p>
+<p><a href="#manual-installation" name="manual-installation">#</a><br>You should place this command in your <code>.bash_profile</code>, <code>.bashrc</code>, <code>.zshrc</code> or other startup script:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">eval</span> $(thefuck --<span class="built_in">alias</span>)</div><div class="line"><span class="comment"># You can use whatever you want as an alias, like for Mondays:</span></div><div class="line"><span class="built_in">eval</span> $(thefuck --<span class="built_in">alias</span> FUCK)</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/nvbn/thefuck/wiki/Shell-aliases" target="_blank" rel="external">Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).</a></p>
+<p>Changes will be available only in a new shell session.<br>To make them available immediately, run <code>source ~/.bashrc</code> (or your shell config file like <code>.zshrc</code>).</p>
+<p>If you want to run fixed command without confirmation you can use <code>-y</code> option:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fuck -y</div></pre></td></tr></table></figure>
+<p>If you want to fix commands recursively until success you can use <code>-r</code> option:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fuck -r</div></pre></td></tr></table></figure>
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install thefuck --upgrade</div></pre></td></tr></table></figure>
+<p><strong>Aliases changed in 1.34.</strong></p>
+<h2 id="How-it-works"><a href="#How-it-works" class="headerlink" title="How it works"></a>How it works</h2><p>The Fuck tries to match a rule for the previous command, creates a new command<br>using the matched rule and runs it. Rules enabled by default are as follows:</p>
+<ul>
+<li><code>ag_literal</code> &ndash; adds <code>-Q</code> to <code>ag</code> when suggested;</li>
+<li><code>aws_cli</code> &ndash; fixes misspelled commands like <code>aws dynamdb scan</code>;</li>
+<li><code>cargo</code> &ndash; runs <code>cargo build</code> instead of <code>cargo</code>;</li>
+<li><code>cargo_no_command</code> &ndash; fixes wrongs commands like <code>cargo buid</code>;</li>
+<li><code>cd_correction</code> &ndash; spellchecks and correct failed cd commands;</li>
+<li><code>cd_mkdir</code> &ndash; creates directories before cd’ing into them;</li>
+<li><code>cd_parent</code> &ndash; changes <code>cd..</code> to <code>cd ..</code>;</li>
+<li><code>chmod_x</code> &ndash; add execution bit;</li>
+<li><code>composer_not_command</code> &ndash; fixes composer command name;</li>
+<li><code>cp_omitting_directory</code> &ndash; adds <code>-a</code> when you <code>cp</code> directory;</li>
+<li><code>cpp11</code> &ndash; adds missing <code>-std=c++11</code> to <code>g++</code> or <code>clang++</code>;</li>
+<li><code>dirty_untar</code> &ndash; fixes <code>tar x</code> command that untarred in the current directory;</li>
+<li><code>dirty_unzip</code> &ndash; fixes <code>unzip</code> command that unzipped in the current directory;</li>
+<li><code>django_south_ghost</code> &ndash; adds <code>--delete-ghost-migrations</code> to failed because ghosts django south migration;</li>
+<li><code>django_south_merge</code> &ndash; adds <code>--merge</code> to inconsistent django south migration;</li>
+<li><code>docker_not_command</code> &ndash; fixes wrong docker commands like <code>docker tags</code>;</li>
+<li><code>dry</code> &ndash; fixes repetitions like <code>git git push</code>;</li>
+<li><code>fab_command_not_found</code> &ndash; fix misspelled fabric commands;</li>
+<li><code>fix_alt_space</code> &ndash; replaces Alt+Space with Space character;</li>
+<li><code>fix_file</code> &ndash; opens a file with an error in your <code>$EDITOR</code>;</li>
+<li><code>gem_unknown_command</code> &ndash; fixes wrong <code>gem</code> commands;</li>
+<li><code>git_add</code> &ndash; fixes <em>“pathspec ‘foo’ did not match any file(s) known to git.”</em>;</li>
+<li><code>git_add_force</code> &ndash; adds <code>--force</code> to <code>git add &lt;pathspec&gt;...</code> when paths are .gitignore’d;</li>
+<li><code>git_bisect_usage</code> &ndash; fixes <code>git bisect strt</code>, <code>git bisect goood</code>, <code>git bisect rset</code>, etc. when bisecting;</li>
+<li><code>git_branch_delete</code> &ndash; changes <code>git branch -d</code> to <code>git branch -D</code>;</li>
+<li><code>git_branch_exists</code> &ndash; offers <code>git branch -d foo</code>, <code>git branch -D foo</code> or <code>git checkout foo</code> when creating a branch that already exists;</li>
+<li><code>git_branch_list</code> &ndash; catches <code>git branch list</code> in place of <code>git branch</code> and removes created branch;</li>
+<li><code>git_checkout</code> &ndash; fixes branch name or creates new branch;</li>
+<li><code>git_diff_no_index</code> &ndash; adds <code>--no-index</code> to previous <code>git diff</code> on untracked files;</li>
+<li><code>git_diff_staged</code> &ndash; adds <code>--staged</code> to previous <code>git diff</code> with unexpected output;</li>
+<li><code>git_fix_stash</code> &ndash; fixes <code>git stash</code> commands (misspelled subcommand and missing <code>save</code>);</li>
+<li><code>git_flag_after_filename</code> &ndash; fixes <code>fatal: bad flag &#39;...&#39; after filename</code></li>
+<li><code>git_help_aliased</code> &ndash; fixes <code>git help &lt;alias&gt;</code> commands replacing <alias> with the aliased command;</alias></li>
+<li><code>git_not_command</code> &ndash; fixes wrong git commands like <code>git brnch</code>;</li>
+<li><code>git_pull</code> &ndash; sets upstream before executing previous <code>git pull</code>;</li>
+<li><code>git_pull_clone</code> &ndash; clones instead of pulling when the repo does not exist;</li>
+<li><code>git_pull_uncommitted_changes</code> &ndash; stashes changes before pulling and pops them afterwards;</li>
+<li><code>git_push</code> &ndash; adds <code>--set-upstream origin $branch</code> to previous failed <code>git push</code>;</li>
+<li><code>git_push_different_branch_names</code> &ndash; fixes pushes when local brach name does not match remote branch name;</li>
+<li><code>git_push_pull</code> &ndash; runs <code>git pull</code> when <code>push</code> was rejected;</li>
+<li><code>git_push_without_commits</code> &ndash; Creates an initial commit if you forget and only <code>git add .</code>, when setting up a new project;</li>
+<li><code>git_rebase_no_changes</code> &ndash; runs <code>git rebase --skip</code> instead of <code>git rebase --continue</code> when there are no changes;</li>
+<li><code>git_remote_delete</code> &ndash; replaces <code>git remote delete remote_name</code> with <code>git remote remove remote_name</code>;</li>
+<li><code>git_rm_local_modifications</code> &ndash;  adds <code>-f</code> or <code>--cached</code> when you try to <code>rm</code> a locally modified file;</li>
+<li><code>git_rm_recursive</code> &ndash; adds <code>-r</code> when you try to <code>rm</code> a directory;</li>
+<li><code>git_rm_staged</code> &ndash;  adds <code>-f</code> or <code>--cached</code> when you try to <code>rm</code> a file with staged changes</li>
+<li><code>git_rebase_merge_dir</code> &ndash; offers <code>git rebase (--continue | --abort | --skip)</code> or removing the <code>.git/rebase-merge</code> dir when a rebase is in progress;</li>
+<li><code>git_remote_seturl_add</code> &ndash; runs <code>git remote add</code> when <code>git remote set_url</code> on nonexistant remote;</li>
+<li><code>git_stash</code> &ndash; stashes your local modifications before rebasing or switching branch;</li>
+<li><code>git_stash_pop</code> &ndash; adds your local modifications before popping stash, then resets;</li>
+<li><code>git_tag_force</code> &ndash; adds <code>--force</code> to <code>git tag &lt;tagname&gt;</code> when the tag already exists;</li>
+<li><code>git_two_dashes</code> &ndash; adds a missing dash to commands like <code>git commit -amend</code> or <code>git rebase -continue</code>;</li>
+<li><code>go_run</code> &ndash; appends <code>.go</code> extension when compiling/running Go programs;</li>
+<li><code>gradle_no_task</code> &ndash; fixes not found or ambiguous <code>gradle</code> task;</li>
+<li><code>gradle_wrapper</code> &ndash; replaces <code>gradle</code> with <code>./gradlew</code>;</li>
+<li><code>grep_arguments_order</code> &ndash; fixes grep arguments order for situations like <code>grep -lir . test</code>;</li>
+<li><code>grep_recursive</code> &ndash; adds <code>-r</code> when you trying to <code>grep</code> directory;</li>
+<li><code>grunt_task_not_found</code> &ndash; fixes misspelled <code>grunt</code> commands;</li>
+<li><code>gulp_not_task</code> &ndash; fixes misspelled <code>gulp</code> tasks;</li>
+<li><code>has_exists_script</code> &ndash; prepends <code>./</code> when script/binary exists;</li>
+<li><code>heroku_not_command</code> &ndash; fixes wrong <code>heroku</code> commands like <code>heroku log</code>;</li>
+<li><code>history</code> &ndash; tries to replace command with most similar command from history;</li>
+<li><code>hostscli</code> &ndash; tries to fix <code>hostscli</code> usage;</li>
+<li><code>ifconfig_device_not_found</code> &ndash; fixes wrong device names like <code>wlan0</code> to <code>wlp2s0</code>;</li>
+<li><code>java</code> &ndash; removes <code>.java</code> extension when running Java programs;</li>
+<li><code>javac</code> &ndash; appends missing <code>.java</code> when compiling Java files;</li>
+<li><code>lein_not_task</code> &ndash; fixes wrong <code>lein</code> tasks like <code>lein rpl</code>;</li>
+<li><code>ln_no_hard_link</code> &ndash; catches hard link creation on directories, suggest symbolic link;</li>
+<li><code>ln_s_order</code> &ndash; fixes <code>ln -s</code> arguments order;</li>
+<li><code>ls_all</code> &ndash; adds <code>-A</code> to <code>ls</code> when output is empty;</li>
+<li><code>ls_lah</code> &ndash; adds <code>-lah</code> to <code>ls</code>;</li>
+<li><code>man</code> &ndash; changes manual section;</li>
+<li><code>man_no_space</code> &ndash; fixes man commands without spaces, for example <code>mandiff</code>;</li>
+<li><code>mercurial</code> &ndash; fixes wrong <code>hg</code> commands;</li>
+<li><code>missing_space_before_subcommand</code> &ndash; fixes command with missing space like <code>npminstall</code>;</li>
+<li><code>mkdir_p</code> &ndash; adds <code>-p</code> when you trying to create directory without parent;</li>
+<li><code>mvn_no_command</code> &ndash; adds <code>clean package</code> to <code>mvn</code>;</li>
+<li><code>mvn_unknown_lifecycle_phase</code> &ndash; fixes misspelled lifecycle phases with <code>mvn</code>;</li>
+<li><code>npm_missing_script</code> &ndash; fixes <code>npm</code> custom script name in <code>npm run-script &lt;script&gt;</code>;</li>
+<li><code>npm_run_script</code> &ndash; adds missing <code>run-script</code> for custom <code>npm</code> scripts;</li>
+<li><code>npm_wrong_command</code> &ndash; fixes wrong npm commands like <code>npm urgrade</code>;</li>
+<li><code>no_command</code> &ndash; fixes wrong console commands, for example <code>vom/vim</code>;</li>
+<li><code>no_such_file</code> &ndash; creates missing directories with <code>mv</code> and <code>cp</code> commands;</li>
+<li><code>open</code> &ndash; either prepends <code>http://</code> to address passed to <code>open</code> or create a new file or directory and passes it to <code>open</code>;</li>
+<li><code>pip_unknown_command</code> &ndash; fixes wrong <code>pip</code> commands, for example <code>pip instatl/pip install</code>;</li>
+<li><code>php_s</code> &ndash; replaces <code>-s</code> by <code>-S</code> when trying to run a local php server;</li>
+<li><code>port_already_in_use</code> &ndash; kills process that bound port;</li>
+<li><code>prove_recursively</code> &ndash; adds <code>-r</code> when called with directory;</li>
+<li><code>python_command</code> &ndash; prepends <code>python</code> when you trying to run not executable/without <code>./</code> python script;</li>
+<li><code>python_execute</code> &ndash; appends missing <code>.py</code> when executing Python files;</li>
+<li><code>quotation_marks</code> &ndash; fixes uneven usage of <code>&#39;</code> and <code>&quot;</code> when containing args’;</li>
+<li><code>path_from_history</code> &ndash; replaces not found path with similar absolute path from history;</li>
+<li><code>react_native_command_unrecognized</code> &ndash; fixes unrecognized <code>react-native</code> commands;</li>
+<li><code>remove_trailing_cedilla</code> &ndash; remove trailling cedillas <code>ç</code>, a common typo for european keyboard layouts;</li>
+<li><code>rm_dir</code> &ndash; adds <code>-rf</code> when you trying to remove directory;</li>
+<li><code>scm_correction</code> &ndash; corrects wrong scm like <code>hg log</code> to <code>git log</code>;</li>
+<li><code>sed_unterminated_s</code> &ndash; adds missing ‘/‘ to <code>sed</code>‘s <code>s</code> commands;</li>
+<li><code>sl_ls</code> &ndash; changes <code>sl</code> to <code>ls</code>;</li>
+<li><code>ssh_known_hosts</code> &ndash; removes host from <code>known_hosts</code> on warning;</li>
+<li><code>sudo</code> &ndash; prepends <code>sudo</code> to previous command if it failed because of permissions;</li>
+<li><code>sudo_command_from_user_path</code> &ndash; runs commands from users <code>$PATH</code> with <code>sudo</code>;</li>
+<li><code>switch_lang</code> &ndash; switches command from your local layout to en;</li>
+<li><code>systemctl</code> &ndash; correctly orders parameters of confusing <code>systemctl</code>;</li>
+<li><code>test.py</code> &ndash; runs <code>py.test</code> instead of <code>test.py</code>;</li>
+<li><code>touch</code> &ndash; creates missing directories before “touching”;</li>
+<li><code>tsuru_login</code> &ndash; runs <code>tsuru login</code> if not authenticated or session expired;</li>
+<li><code>tsuru_not_command</code> &ndash; fixes wrong <code>tsuru</code> commands like <code>tsuru shell</code>;</li>
+<li><code>tmux</code> &ndash; fixes <code>tmux</code> commands;</li>
+<li><code>unknown_command</code> &ndash; fixes hadoop hdfs-style “unknown command”, for example adds missing ‘-‘ to the command on <code>hdfs dfs ls</code>;</li>
+<li><code>vagrant_up</code> &ndash; starts up the vagrant instance;</li>
+<li><code>whois</code> &ndash; fixes <code>whois</code> command;</li>
+<li><code>workon_doesnt_exists</code> &ndash; fixes <code>virtualenvwrapper</code> env name os suggests to create new.</li>
+<li><code>yarn_alias</code> &ndash; fixes aliased <code>yarn</code> commands like <code>yarn ls</code>;</li>
+<li><code>yarn_command_not_found</code> &ndash; fixes misspelled <code>yarn</code> commands;</li>
+<li><code>yarn_command_replaced</code> &ndash; fixes replaced <code>yarn</code> commands;</li>
+<li><code>yarn_help</code> &ndash; makes it easier to open <code>yarn</code> documentation;</li>
+</ul>
+<p>Enabled by default only on specific platforms:</p>
+<ul>
+<li><code>apt_get</code> &ndash; installs app from apt if it not installed (requires <code>python-commandnotfound</code> / <code>python3-commandnotfound</code>);</li>
+<li><code>apt_get_search</code> &ndash; changes trying to search using <code>apt-get</code> with searching using <code>apt-cache</code>;</li>
+<li><code>apt_invalid_operation</code> &ndash; fixes invalid <code>apt</code> and <code>apt-get</code> calls, like <code>apt-get isntall vim</code>;</li>
+<li><code>brew_cask_dependency</code> &ndash; installs cask dependencies;</li>
+<li><code>brew_install</code> &ndash; fixes formula name for <code>brew install</code>;</li>
+<li><code>brew_link</code> &ndash; adds <code>--overwrite --dry-run</code> if linking fails;</li>
+<li><code>brew_uninstall</code> &ndash; adds <code>--force</code> to <code>brew uninstall</code> if multiple versions were installed;</li>
+<li><code>brew_unknown_command</code> &ndash; fixes wrong brew commands, for example <code>brew docto/brew doctor</code>;</li>
+<li><code>brew_update_formula</code> &ndash; turns <code>brew update &lt;formula&gt;</code> into <code>brew upgrade &lt;formula&gt;</code>;</li>
+<li><code>dnf_no_such_command</code> &ndash; fixes mistyped DNF commands;</li>
+<li><code>pacman</code> &ndash; installs app with <code>pacman</code> if it is not installed (uses <code>yaourt</code> if available);</li>
+<li><code>pacman_not_found</code> &ndash; fixes package name with <code>pacman</code> or <code>yaourt</code>.</li>
+</ul>
+<p>Bundled, but not enabled by default:</p>
+<ul>
+<li><code>git_push_force</code> &ndash; adds <code>--force-with-lease</code> to a <code>git push</code> (may conflict with <code>git_push_pull</code>);</li>
+<li><code>rm_root</code> &ndash; adds <code>--no-preserve-root</code> to <code>rm -rf /</code> command.</li>
+</ul>
+<h2 id="Creating-your-own-rules"><a href="#Creating-your-own-rules" class="headerlink" title="Creating your own rules"></a>Creating your own rules</h2><p>For adding your own rule you should create <code>your-rule-name.py</code><br>in <code>~/.config/thefuck/rules</code>. The rule should contain two functions:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">match(command: Command) -&gt; bool</div><div class="line">get_new_command(command: Command) -&gt; str | list[str]</div></pre></td></tr></table></figure>
+<p>Also the rule can contain an optional function</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">side_effect(old_command: Command, fixed_command: str) -&gt; None</div></pre></td></tr></table></figure>
+<p>and optional <code>enabled_by_default</code>, <code>requires_output</code> and <code>priority</code> variables.</p>
+<p><code>Command</code> has three attributes: <code>script</code>, <code>output</code> and <code>script_parts</code>.<br>Rule shouldn’t change <code>Command</code>.</p>
+<p><em>Rules api changed in 3.0:</em> For accessing settings in rule you need to import it with <code>from thefuck.conf import settings</code>.<br><code>settings</code> is a special object filled with <code>~/.config/thefuck/settings.py</code> and values from env (<a href="#settings">see more below</a>).</p>
+<p>Simple example of the rule for running script with <code>sudo</code>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">match</span><span class="params">(command)</span>:</span></div><div class="line">    <span class="keyword">return</span> (<span class="string">'permission denied'</span> <span class="keyword">in</span> command.output.lower()</div><div class="line">            <span class="keyword">or</span> <span class="string">'EACCES'</span> <span class="keyword">in</span> command.output)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_new_command</span><span class="params">(command)</span>:</span></div><div class="line">    <span class="keyword">return</span> <span class="string">'sudo &#123;&#125;'</span>.format(command.script)</div><div class="line"></div><div class="line"><span class="comment"># Optional:</span></div><div class="line">enabled_by_default = <span class="keyword">True</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">side_effect</span><span class="params">(command, fixed_command)</span>:</span></div><div class="line">    subprocess.call(<span class="string">'chmod 777 .'</span>, shell=<span class="keyword">True</span>)</div><div class="line"></div><div class="line">priority = <span class="number">1000</span>  <span class="comment"># Lower first, default is 1000</span></div><div class="line"></div><div class="line">requires_output = <span class="keyword">True</span></div></pre></td></tr></table></figure>
+<p><a href="https://github.com/nvbn/thefuck/tree/master/thefuck/rules" target="_blank" rel="external">More examples of rules</a>,<br><a href="https://github.com/nvbn/thefuck/tree/master/thefuck/utils.py" target="_blank" rel="external">utility functions for rules</a>,<br><a href="https://github.com/nvbn/thefuck/tree/master/thefuck/specific/" target="_blank" rel="external">app/os-specific helpers</a>.</p>
+<h2 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h2><p>The Fuck has a few settings parameters which can be changed in <code>$XDG_CONFIG_HOME/thefuck/settings.py</code> (<code>$XDG_CONFIG_HOME</code> defaults to <code>~/.config</code>):</p>
+<ul>
+<li><code>rules</code> &ndash; list of enabled rules, by default <code>thefuck.conf.DEFAULT_RULES</code>;</li>
+<li><code>exclude_rules</code> &ndash; list of disabled rules, by default <code>[]</code>;</li>
+<li><code>require_confirmation</code> &ndash; requires confirmation before running new command, by default <code>True</code>;</li>
+<li><code>wait_command</code> &ndash; max amount of time in seconds for getting previous command output;</li>
+<li><code>no_colors</code> &ndash; disable colored output;</li>
+<li><code>priority</code> &ndash; dict with rules priorities, rule with lower <code>priority</code> will be matched first;</li>
+<li><code>debug</code> &ndash; enables debug output, by default <code>False</code>;</li>
+<li><code>history_limit</code> &ndash; numeric value of how many history commands will be scanned, like <code>2000</code>;</li>
+<li><code>alter_history</code> &ndash; push fixed command to history, by default <code>True</code>;</li>
+<li><code>wait_slow_command</code> &ndash; max amount of time in seconds for getting previous command output if it in <code>slow_commands</code> list;</li>
+<li><code>slow_commands</code> &ndash; list of slow commands.</li>
+</ul>
+<p>Example of <code>settings.py</code>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">rules = [<span class="string">'sudo'</span>, <span class="string">'no_command'</span>]</div><div class="line">exclude_rules = [<span class="string">'git_push'</span>]</div><div class="line">require_confirmation = <span class="keyword">True</span></div><div class="line">wait_command = <span class="number">10</span></div><div class="line">no_colors = <span class="keyword">False</span></div><div class="line">priority = &#123;<span class="string">'sudo'</span>: <span class="number">100</span>, <span class="string">'no_command'</span>: <span class="number">9999</span>&#125;</div><div class="line">debug = <span class="keyword">False</span></div><div class="line">history_limit = <span class="number">9999</span></div><div class="line">wait_slow_command = <span class="number">20</span></div><div class="line">slow_commands = [<span class="string">'react-native'</span>, <span class="string">'gradle'</span>]</div></pre></td></tr></table></figure>
+<p>Or via environment variables:</p>
+<ul>
+<li><code>THEFUCK_RULES</code> &ndash; list of enabled rules, like <code>DEFAULT_RULES:rm_root</code> or <code>sudo:no_command</code>;</li>
+<li><code>THEFUCK_EXCLUDE_RULES</code> &ndash; list of disabled rules, like <code>git_pull:git_push</code>;</li>
+<li><code>THEFUCK_REQUIRE_CONFIRMATION</code> &ndash; require confirmation before running new command, <code>true/false</code>;</li>
+<li><code>THEFUCK_WAIT_COMMAND</code> &ndash; max amount of time in seconds for getting previous command output;</li>
+<li><code>THEFUCK_NO_COLORS</code> &ndash; disable colored output, <code>true/false</code>;</li>
+<li><code>THEFUCK_PRIORITY</code> &ndash; priority of the rules, like <code>no_command=9999:apt_get=100</code>,<br>rule with lower <code>priority</code> will be matched first;</li>
+<li><code>THEFUCK_DEBUG</code> &ndash; enables debug output, <code>true/false</code>;</li>
+<li><code>THEFUCK_HISTORY_LIMIT</code> &ndash; how many history commands will be scanned, like <code>2000</code>;</li>
+<li><code>THEFUCK_ALTER_HISTORY</code> &ndash; push fixed command to history <code>true/false</code>;</li>
+<li><code>THEFUCK_WAIT_SLOW_COMMAND</code> &ndash; max amount of time in seconds for getting previous command output if it in <code>slow_commands</code> list;</li>
+<li><code>THEFUCK_SLOW_COMMANDS</code> &ndash; list of slow commands, like <code>lein:gradle</code>.</li>
+</ul>
+<p>For example:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> THEFUCK_RULES=<span class="string">'sudo:no_command'</span></div><div class="line"><span class="built_in">export</span> THEFUCK_EXCLUDE_RULES=<span class="string">'git_pull:git_push'</span></div><div class="line"><span class="built_in">export</span> THEFUCK_REQUIRE_CONFIRMATION=<span class="string">'true'</span></div><div class="line"><span class="built_in">export</span> THEFUCK_WAIT_COMMAND=10</div><div class="line"><span class="built_in">export</span> THEFUCK_NO_COLORS=<span class="string">'false'</span></div><div class="line"><span class="built_in">export</span> THEFUCK_PRIORITY=<span class="string">'no_command=9999:apt_get=100'</span></div><div class="line"><span class="built_in">export</span> THEFUCK_HISTORY_LIMIT=<span class="string">'2000'</span></div></pre></td></tr></table></figure>
+<h2 id="Experimental-instant-mode"><a href="#Experimental-instant-mode" class="headerlink" title="Experimental instant mode"></a>Experimental instant mode</h2><p>By default The Fuck reruns a previous command and that takes time,<br>in instant mode The Fuck logs output with <a href="https://en.wikipedia.org/wiki/Script_(Unix" target="_blank" rel="external">script</a>)<br>and just reads the log.</p>
+<p><a href="https://raw.githubusercontent.com/nvbn/thefuck/master/example_instant_mode.gif" target="_blank" rel="external"><img src="https://raw.githubusercontent.com/nvbn/thefuck/master/example_instant_mode.gif" alt="gif with instant mode"></a></p>
+<p>At the moment only Python 3 with bash or zsh is supported.</p>
+<p>For enabling instant mode you need to add <code>--enable-experimental-instant-mode</code><br>to alias initialization in your <code>.bashrc</code>, <code>.bash_profile</code> or <code>.zshrc</code> like:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">eval</span> $(thefuck --<span class="built_in">alias</span> --<span class="built_in">enable</span>-experimental-instant-mode)</div></pre></td></tr></table></figure>
+<h2 id="Developing"><a href="#Developing" class="headerlink" title="Developing"></a>Developing</h2><p>Install <code>The Fuck</code> for development:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">pip install -r requirements.txt</div><div class="line">python setup.py develop</div></pre></td></tr></table></figure>
+<p>Run code style checks:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">flake8</div></pre></td></tr></table></figure>
+<p>Run unit tests:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">py.test</div></pre></td></tr></table></figure>
+<p>Run unit and functional tests (requires docker):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">py.test --<span class="built_in">enable</span>-functional</div></pre></td></tr></table></figure>
+<p>For sending package to pypi:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install pandoc</div><div class="line">./release.py</div></pre></td></tr></table></figure>
+<h2 id="License-MIT"><a href="#License-MIT" class="headerlink" title="License MIT"></a>License MIT</h2><p>Project License can be found <a href="LICENSE.md">here</a>.</p>
+</div><div class="tags"></div><div class="post-share"><div class="bdsharebuttonbox"><span style="float:left;line-height: 28px;height: 28px;font-size:16px;font-weight:blod">分享到：</span><a href="#" data-cmd="more" class="bds_more"></a><a href="#" data-cmd="mshare" title="分享到一键分享" class="bds_mshare"></a><a href="#" data-cmd="fbook" title="分享到Facebook" class="bds_fbook"></a><a href="#" data-cmd="twi" title="分享到Twitter" class="bds_twi"></a><a href="#" data-cmd="linkedin" title="分享到linkedin" class="bds_linkedin"></a><a href="#" data-cmd="youdao" title="分享到有道云笔记" class="bds_youdao"></a><a href="#" data-cmd="evernotecn" title="分享到印象笔记" class="bds_evernotecn"></a><a href="#" data-cmd="weixin" title="分享到微信" class="bds_weixin"></a><a href="#" data-cmd="qzone" title="分享到QQ空间" class="bds_qzone"></a><a href="#" data-cmd="tsina" title="分享到新浪微博" class="bds_tsina"></a></div></div><div class="post-nav"><a href="/2017/11/08/hello-world/" class="next">Hello World</a></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-Fuck"><span class="toc-text">The Fuck     </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Requirements"><span class="toc-text">Requirements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Update"><span class="toc-text">Update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-it-works"><span class="toc-text">How it works</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-your-own-rules"><span class="toc-text">Creating your own rules</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Settings"><span class="toc-text">Settings</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Experimental-instant-mode"><span class="toc-text">Experimental instant mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Developing"><span class="toc-text">Developing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#License-MIT"><span class="toc-text">License MIT</span></a></li></ol></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/有趣的一个小游戏/">有趣的一个小游戏</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">订阅</a> |  <a href="/about/">关于</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">liubibi.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?41fc030db57d5570dd22f78997";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/search.json.js?v=2.0.1"></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","weixin","tsina","qzone","linkedin","fbook","twi","print","renren","sqq","evernotecn","bdysc","tqq","tqf","bdxc","kaixin001","tieba","douban","bdhome","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","h163","copy"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"]}};with(document)0[(getElementsByTagName('head')[0]||head).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script></body></html>
